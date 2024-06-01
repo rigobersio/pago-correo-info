@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import PaypalButton from './components/paypalButton/PaypalButton';
+//import PaypalButton from './components/paypalButton/PaypalButton';
+import Pago from "./components/pago/Pago"
 
 function App() {
   const [totalValue, setTotalValue] = useState(null);
@@ -29,7 +30,7 @@ function App() {
         <h2>Pago</h2>
         {totalValue && (
           <div>
-            <PaypalButton totalValue={totalValue} invoice={invoice} SameSite="none" />
+            <Pago totalValue={totalValue} invoice={invoice} SameSite="none" />
           </div>
         )}
       </div>
